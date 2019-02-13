@@ -1,3 +1,12 @@
+在Centos OS中不会自动开启端口 centos 7.0 以后可以用一下命令查看、开启对应端口
+
+查看指定区域所有开启的端口号
+firewall-cmd --zone=public --list-ports
+在指定区域开启端口(如80端口号，命令方式)
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+重新启动防火墙
+firewall-cmd --reload
+
 # v2ray
 最好用的 V2Ray 一键安装脚本 &amp; 管理脚本
 
@@ -12,3 +21,5 @@
 
 ## 更多 V2Ray 教程文章
 https://github.com/233boy/v2ray/wiki
+
+
