@@ -2,8 +2,10 @@
 
 查看指定区域所有开启的端口号
 firewall-cmd --zone=public --list-ports
+
 在指定区域开启端口(如80端口号，命令方式)
 firewall-cmd --zone=public --add-port=80/tcp --permanent
+
 重新启动防火墙
 firewall-cmd --reload
 
